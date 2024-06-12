@@ -1,0 +1,26 @@
+.info {
+  @apply bg-black/45 w-full p-5 mb-12 backdrop-blur-xs;
+  box-shadow: 8px 8px 0 2px rgba(#000, .15);
+  animation: box-shadow 3s linear infinite;
+}
+
+@keyframes box-shadow {
+  0%, 100% {
+    box-shadow: 8px 8px 0 2px rgba(#000, .15);
+  }
+  50% {
+    box-shadow: 8px 8px 7px 18px rgba(#000, .15);
+  }
+}
+
+.text {
+  @apply sm:mt-7 sm:mb-11 mt-2 mb-7;
+}
+
+.bottom {
+  @apply flex items-center justify-between;
+}
+
+.feed {
+  @apply text-sm text-light-pink uppercase;
+}

@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid&family=Roboto+Flex:opsz,wdth,wght,GRAD,XTRA@8..144,119.2,100..1000,-200..150,400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*::before,
+*::after {
+  @apply box-border;
+}
+
+body {
+  @apply font-roboto-flex font-normal text-white tracking-wider;
+  font-size: clamp(0.88rem, 2vw, 1.12rem);
+}
+
+a {
+  @apply inline-block text-inherit no-underline;
+}
+
+img {
+  @apply max-w-full;
+}
+
+input {
+  @apply inline-block bg-transparent border-none p-0 m-0 text-solar text-sm font-roboto-flex placeholder:text-white placeholder:text-sm placeholder:font-roboto-flex;
+  outline: none !important;
+}
+
+button {
+  @apply inline-block p-0 m-0 bg-transparent border-none text-inherit text-sm cursor-pointer;
+  outline: none !important;
+}
+
+.app-container {
+  max-width: 1396px;
+  width: 100%;
+  padding-inline: 15px;
+  margin-inline: auto;
+}

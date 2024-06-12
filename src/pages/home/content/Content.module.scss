@@ -1,0 +1,11 @@
+.content {
+  @apply flex h-full pt-16;
+}
+
+.starts {
+  @apply absolute top-4 right-[15px] z-10 flex gap-x-2.5;
+}
+
+.box {
+  @apply sm:max-w-[477px] w-full mt-auto mb-12 sm:mb-24 z-10 animate-left;
+}

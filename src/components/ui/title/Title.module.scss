@@ -1,0 +1,4 @@
+.title {
+  @apply font-londrina-solid bg-gradient-to-b from-solar to-violet text-transparent bg-clip-text uppercase;
+  font-size: clamp(2.7rem, 4vw, 4rem);
+}

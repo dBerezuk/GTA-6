@@ -1,0 +1,23 @@
+.field {
+  @apply relative sm:max-w-80;
+
+  &:before {
+    content: '';
+    @apply absolute top-0 bottom-0 left-0 right-0 bg-black/45 blur-mxs transition-filter-and-colors duration-500 lg:hover:blur-lg;
+    transform: translate3d(0, 0, 0);
+  }
+
+  & + & {
+    @apply mt-5;
+  }
+
+  &__error {
+    &:before {
+      @apply bg-red-600/70 blur-lg;
+    }
+  }
+}
+
+.input {
+  @apply p-4 w-full relative z-10;
+}
